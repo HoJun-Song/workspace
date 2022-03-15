@@ -23,17 +23,23 @@ public class CardInteraction {
 		//Alter this gradually to add more details
 		System.out.print("Enter Name: ");
 		String name = getNameFromUser();
-		while (name.length() > 28 || !name.contains(" ")) {
-			if (!(name.contains(" "))) {
-				System.out.println("Please include a blank in your name.");
-			}
-			else {
-				System.out.println("Please write your name in 28 characters or less.");
-			}
+		while (!name.contains(" ")) {
+			System.out.println("Please include a blank in your name.");
 			System.out.print("Enter Name: ");
 			name = getNameFromUser();
 		}
 		card = new CardOrder(name);
+		while (card.getName().getCardName().length() > 28) {
+			System.out.println("Please write your name in 28 characters or less.");
+			System.out.print("Enter Name: ");
+			name = getNameFromUser();
+			while (!name.contains(" ")) {
+				System.out.println("Please include a blank in your name.");
+				System.out.print("Enter Name: ");
+				name = getNameFromUser();
+			}
+			card = new CardOrder(name);
+		}
 		System.out.print("\nHere is a sample card:\n\n");
 		System.out.print(card.getSampleCard());
 		
@@ -57,7 +63,7 @@ public class CardInteraction {
 		}
 		card.setNumCards(numCards);
 		
-		System.out.println("The price of " + card.getNumCards() + " is " + card.getFinalCost() + " won.");
+		System.out.println("\nThe price of " + card.getNumCards() + " cards is " + card.getFinalCost() + " won.");
 		if (card.getNumCards() >= 200) {
 			System.out.println("10% discount applied");
 		}
