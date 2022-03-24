@@ -1,3 +1,4 @@
+
 A, B = map(int, input().split())
 i = 10
 num_A = []
