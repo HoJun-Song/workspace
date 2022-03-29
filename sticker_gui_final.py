@@ -1,4 +1,3 @@
-
 ################################### Modules ######################################
 import os                           # for getting system information
 import sys                          # for using sys.exit() function
