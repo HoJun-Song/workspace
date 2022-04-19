@@ -1,4 +1,3 @@
-
 X = int(input())
 count = 1
 stick = [64]
