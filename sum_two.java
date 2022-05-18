@@ -1,4 +1,3 @@
-package study_JAVA_week1;
 import java.util.*;
 
 public class sum_two {
