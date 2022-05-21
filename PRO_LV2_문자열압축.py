@@ -1,4 +1,3 @@
-#2022-05-21 1차시도
 def solution(s):
     answer = 0
     unit = 1
@@ -10,7 +9,7 @@ def solution(s):
         count = 1
         i = unit
 
-        while i < (len(s) - 1):
+        while i <= (len(s) - 1):
             cmp = s[i:(i+unit)]
             if cmp == tmp:
                 count += 1
