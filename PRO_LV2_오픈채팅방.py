@@ -1,3 +1,4 @@
+#2022-05-21 2차시도
 def solution(record):
     answer = []
     tmp = []
