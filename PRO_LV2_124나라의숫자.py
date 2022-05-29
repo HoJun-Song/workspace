@@ -1,3 +1,4 @@
+#2022-05-29 1차 시도
 def solution(n):
     answer = ''
     arr = []
