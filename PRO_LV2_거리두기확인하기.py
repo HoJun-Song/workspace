@@ -1,4 +1,5 @@
 def solution(places):
+    
     answer = []
     for room in places:
         posP = []
