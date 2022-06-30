@@ -1,4 +1,3 @@
-#2022-05-29 1차 시도
 def solution(n):
     
     answer = ''
@@ -6,9 +5,12 @@ def solution(n):
     n = int(n)
     
     while n >= 1:
-        tmp = int(n % 3)
+        tmp = n % 3
+        if tmp == 0:
+            tmp = 4
+            n -= 1
         arr.append(tmp)
-        n = int(n / 3)
+        n = n // 3
         
     arr.reverse()
     
