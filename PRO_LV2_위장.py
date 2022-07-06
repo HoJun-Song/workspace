@@ -1,4 +1,4 @@
-#2022-07-05 1차 시도
+#2022-07-06 1차 시도
 def solution(clothes):
     clothesType = []
     clothesType.append([clothes[0][1], 1])
