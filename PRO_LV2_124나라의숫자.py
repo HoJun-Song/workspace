@@ -1,5 +1,4 @@
 def solution(n):
-    
     answer = ''
     arr = []
     n = int(n)
