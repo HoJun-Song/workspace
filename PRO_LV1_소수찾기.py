@@ -1,4 +1,3 @@
-#2022-05-30 1차 시도
 def solution(n):
     answer = 0
     flag = 1
