@@ -1,4 +1,3 @@
-package study_JAVA_week1;
 import java.util.Arrays;
 
 public class no_goal_time {

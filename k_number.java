@@ -1,4 +1,3 @@
-package study_JAVA_week2;
 import java.util.*;
 
 public class k_number {
