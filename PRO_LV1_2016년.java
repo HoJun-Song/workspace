@@ -1,7 +1,6 @@
 class Solution {
     public String solution(int a, int b) {
         String[] answer = {"SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
-        
         int date = 4;
         for (int i = 1; i < a; i++) {
             if (i <= 7) {
