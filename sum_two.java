@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class sum_two {
 	public int[] solution(int[] numbers) {
         HashSet<Integer> tmp = new HashSet<>();
